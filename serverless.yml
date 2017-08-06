@@ -46,7 +46,6 @@ resources:
                 - Effect: Allow
                   Action:
                     - sqs:SendMessage
-                    - sqs:ReceiveMessage
                   Resource: "arn:aws:sqs:us-east-1:*:*"
                 - Effect: Allow # note that these rights are given in the default policy and are required if you want logs out of your lambda(s)
                   Action:
