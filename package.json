@@ -1,0 +1,31 @@
+{
+  "name": "astroseed",
+  "version": "0.9.0",
+  "description": "grab astro data and use it to put random seeds onto an AWS SQS queue",
+  "main": "seed.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthewberryman/astroseed.git"
+  },
+  "keywords": [
+    "astronomy",
+    "random",
+    "seed"
+  ],
+  "author": "Matthew Berryman",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/matthewberryman/astroseed/issues"
+  },
+  "homepage": "https://github.com/matthewberryman/astroseed#readme",
+  "dependencies": {
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1"
+  },
+  "devDependencies": {
+    "aws-sdk": "^2.94.0"
+  }
+}
