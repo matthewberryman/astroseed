@@ -24,8 +24,7 @@ const seedSQSWriterStream = class seedSQSWriterStream extends stream.Writable {
           console.log("Success", data.MessageId);
         }
       });
-      console.log(typeof(this.mybuffer.slice(0,4).readInt32LE()));
-      console.log(this.mybuffer.slice(0,4).readInt32LE());
+
       this.mybuffer = this.mybuffer.slice(4);
     }
 
