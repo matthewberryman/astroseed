@@ -4,8 +4,10 @@ const stream = require('stream');
 const seedSQSWriterStream = class seedSQSWriterStream extends stream.Writable {
 
   send(callback) {
-    while (this.mybuffer.length > 4) {
+
+    while (this.mybuffer.length >= 4) {
       var seed = String(this.mybuffer.slice(0,4).readInt32LE());
+
       var params = {
         DelaySeconds: 0,
         MessageAttributes: {
@@ -15,8 +17,10 @@ const seedSQSWriterStream = class seedSQSWriterStream extends stream.Writable {
           }
         },
         MessageBody: "Random seed " + seed,
+        MessageGroupId: "1",
         QueueUrl: process.env.SQS_QUEUE_URL
       };
+      console.log(params);
       this.sqs.sendMessage(params, function(err, data) {
         if (err) {
           console.log("Error", err);
@@ -31,10 +35,11 @@ const seedSQSWriterStream = class seedSQSWriterStream extends stream.Writable {
     callback(null);
   }
 
-  constructor() {
+  constructor(queue_url) {
     super();
     this.mybuffer = new Buffer.from('');
     this.sqs = new AWS.SQS();
+    this.queue_url = queue_url;
 
   }
 
