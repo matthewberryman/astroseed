@@ -15,3 +15,6 @@ export SQS_QUEUE_URL="your_SQS_url"
 # export API_KEY=your_API_key
 serverless deploy
 ```
+
+## example
+The [EPIC-random branch of the Midsomer Murders bot](https://github.com/matthewberryman/midsomerplots/tree/EPIC-random) as currently in testing at [@mattjb_bot_test](https://twitter.com/mattjb_bot_test).
