@@ -65,7 +65,7 @@ functions:
   seed:
     handler: seed.handler
     events:
-      - schedule: rate(2 days)
+      - schedule: rate(1 day)
     memorySize: 256
     timeout: 300
     role: astroseedSQSRole
