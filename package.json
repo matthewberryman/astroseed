@@ -22,10 +22,10 @@
   },
   "homepage": "https://github.com/matthewberryman/astroseed#readme",
   "dependencies": {
-    "request": "^2.81.0",
-    "request-promise": "^4.2.1"
+    "request": "^2.87.0",
+    "request-promise": "^4.2.2"
   },
   "devDependencies": {
-    "aws-sdk": "^2.94.0"
+    "aws-sdk": "^2.249.1"
   }
 }
