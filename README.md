@@ -17,4 +17,4 @@ serverless deploy
 ```
 
 ## example
-The [EPIC-random branch of the Midsomer Murders bot](https://github.com/matthewberryman/midsomerplots/tree/EPIC-random) as currently in testing at [@mattjb_bot_test](https://twitter.com/mattjb_bot_test).
+The [Midsomer Murders bot](https://github.com/matthewberryman/midsomerplots) as currently running at [@midsomerplots](https://twitter.com/midsomerplots).
