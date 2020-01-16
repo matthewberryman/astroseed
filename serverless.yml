@@ -20,7 +20,7 @@ service: astroseed # NOTE: update this with your service name
 
 provider:
   name: aws
-  runtime: nodejs10.x
+  runtime: nodejs12.x
   stage: prod
   region: us-east-1
 
