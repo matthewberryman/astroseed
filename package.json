@@ -26,6 +26,6 @@
     "request-promise": "^4.2.5"
   },
   "devDependencies": {
-    "aws-sdk": "^2.604.0"
+    "aws-sdk": "^2.814.0"
   }
 }
